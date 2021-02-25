@@ -4,14 +4,22 @@
 	"description": "Dev Bootcamp Backend API",
 	"main": "server.js",
 	"scripts": {
-		"start": "NODE_ENV=production node server",
-    "dev": "nodemon server"
+		"start": "node server",
+		"dev": "nodemon server",
+		"data:import": "node seeder -i",
+		"data:destroy": "node seeder -d"
 	},
 	"author": "Sukrut Daphalapurkar",
 	"license": "MIT",
 	"dependencies": {
+		"colors": "^1.4.0",
 		"dotenv": "^8.2.0",
-		"express": "^4.17.1"
+		"express": "^4.17.1",
+		"express-fileupload": "^1.2.1",
+		"mongoose": "^5.11.15",
+		"morgan": "^1.10.0",
+		"node-geocoder": "^3.27.0",
+		"slugify": "^1.4.6"
 	},
 	"devDependencies": {
 		"nodemon": "^2.0.7"
