@@ -30,7 +30,7 @@ const BootcampSchema = new mongoose.Schema(
 		},
 		email: {
 			type: String,
-			match: [/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/, 'Please provide a valid email.']
+			match: [/^[\w.]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/, 'Please provide a valid email.']
 		},
 		address: {
 			type: String,
@@ -79,6 +79,11 @@ const BootcampSchema = new mongoose.Schema(
 		createdAt: {
 			type: Date,
 			default: Date.now
+		},
+		user: {
+			type: mongoose.Schema.ObjectId,
+			ref: 'User',
+			required: true
 		}
 	},
 	{
