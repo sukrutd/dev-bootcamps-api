@@ -1,6 +1,6 @@
 # DevBootcamps API
 
-> Backend API for DevBootcamps application to manage bootcamps, courses, reviews, users and authentication
+> Backend API for DevBootcamps application to manage bootcamps, courses, users and authentication
 
 ## Usage
 
