@@ -4,7 +4,7 @@
 
 ## Usage
 
-> Rename "config/config.env.env" to "config/config.env" and update the values/settings of your own choice.
+> Rename "config/config.env.env" to "config/config.env" and update the values/settings based on your own choice.
 
 ## Install Dependencies
 
